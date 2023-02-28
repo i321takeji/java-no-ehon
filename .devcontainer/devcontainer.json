@@ -1,0 +1,23 @@
+{
+  "name": "Java",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "TARGET_JAVA_VERSION": "17"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      // Set *default* container specific settings.json values on container create.
+      "settings": {
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true
+      },
+      "extensions": [
+        "vscjava.vscode-java-pack"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
