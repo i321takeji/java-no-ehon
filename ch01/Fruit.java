@@ -12,13 +12,13 @@ class Fruit {
         String fruit = apple + a + "こ";
         System.out.println(fruit);
 
-        sample();
+        example();
     }
 
     /**
      * p.12
      */
-    static void sample() {
+    static void example() {
         char a = 'A';
         System.out.println(a);
         System.out.println('\u0041');
