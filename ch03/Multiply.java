@@ -1,0 +1,15 @@
+package ch03;
+
+/**
+ * for 文, p.53
+ */
+
+class Multiply {
+    public static void main(String[] args) {
+        int i, j;
+
+        for (j = 1; j <= 9; j++)
+            for (i = 1; i <= 9; i++)
+                System.out.println(j + " × " + i + " = " + j * i);
+    }
+}
