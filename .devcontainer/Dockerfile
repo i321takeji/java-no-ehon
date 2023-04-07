@@ -1,4 +1,4 @@
-ARG TARGET_JAVA_VERSION=17
+ARG TARGET_JAVA_VERSION=19
 
 FROM openjdk:${TARGET_JAVA_VERSION}-jdk-alpine
 
@@ -11,8 +11,8 @@ ARG USER_NAME="vscode"
 RUN apk add --update-cache --no-cache \
     bash \
     git \
-    && addgroup -g "${GROUP_ID}" "${USER_NAME}" && \
-    adduser -u "${USER_ID}" -G "${USER_NAME}" -D "${USER_NAME}" -h "/home/${USER_NAME}" -s /bin/bash
+    && addgroup -g "${GROUP_ID}" "${USER_NAME}" \
+    && adduser -u "${USER_ID}" -G "${USER_NAME}" -D "${USER_NAME}" -h "/home/${USER_NAME}" -s /bin/bash
 
 WORKDIR /workspaces
 
